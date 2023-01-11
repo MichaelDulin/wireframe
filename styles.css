@@ -13,11 +13,12 @@ header {
 
 #hyperlinks {
     list-style-type: none;
+    padding-left:95%;
 }
 
 h1 {
     float: left;
-    padding-left: 300px;
+    padding-left:44%;
     padding-right: 200px;
     font-size: 40px;
     font-style: oblique;
@@ -26,18 +27,19 @@ h1 {
 
 h2 {
     font-size: 30px;
-    padding-left: 370px;
+    padding-left:45%;
     font-style:italic;
 }
 
 h3 {
     font-style:italic;
     font-size: 30px;
-    padding-left: 370px;
+    padding-left:45%;
 }
 
 p {
     margin: 20px;
+    font-size: 25px;
 }
 
 img {
