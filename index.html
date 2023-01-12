@@ -5,9 +5,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <script>
+        
+    </script>
     
     <header>
-        <h1>We Love Dogs</h1>
+        <h1>We Love Dogs
+            <script>     
+                let result = 0;   
+                let userDogResponse = prompt("Do you like dogs?");                                     
+                do {                    
+                    if (userDogResponse == 'yes' || userDogResponse == 'y' || userDogResponse == 'YES') {
+                        document.write("...and so do you!");
+                        result = 1;
+                    }
+                    else if (userDogResponse == 'no' || userDogResponse == 'n' || userDogResponse == 'NO') {  
+                        document.write("...but you don't...");                     
+                        result = 1;                 
+                    } else {
+                    userDogResponse = prompt("Wait that's not right. Try again using yes or no!");
+                    }
+                } while (result == 0);
+            </script>
+        </h1>
+        
         <nav>
             <ul id="hyperlinks">
                 <li><a href="https://cfosprof.github.io/wireframe/" > About the Author </a></li>
@@ -17,12 +39,20 @@
     </header>
 
     <main>
+
+        <p id="user-name">
+            <script>
+                let userName = prompt("Please type your name: ");
+                document.write("Hello, " + userName + " and welcome to We Love Dogs!");
+            </script>
+        </p>
+
         <p>Doggo ipsum length boy very hand that feed shibe adorable doggo fat boi smol borking doggo with a long snoot for pats snoot shooberino, heckin angery woofer super chub big ol pupper waggy wags. Bork borking doggo super chub borkdrive, borking doggo ur givin me a spook. Long woofer porgo blop wow such tempt very jealous pupper snoot, thicc doge long bois. Mlem length boy heckin good boys and girls yapper big ol pupper floofs doge, vvv very good spot ruff very good spot you are doing me a frighten. Snoot heckin good boys and girls borkdrive wrinkler very hand that feed shibe corgo dat tungg tho, noodle horse dat tungg tho mlem doggo. Porgo such treat lotsa pats very jealous pupper many pats, noodle horse big ol smol blep, aqua doggo snoot heckin good boys and girls.
 
             H*ck heckin good boys and girls noodle horse very taste wow wow such tempt very taste wow floofs, pupperino floofs thicc big ol waggy wags. Smol blop I am bekom fat pats doing me a frighten, ur givin me a spook long water shoob thicc. Vvv very good spot maximum borkdrive heckin good boys and girls long doggo pats very jealous pupper, you are doing me a frighten corgo tungg long woofer. bork borkf the neighborhood pupper. Extremely cuuuuuute shoob heckin you are doing me the shock borking doggo tungg, floofs long bois shibe very taste wow.</p>
         <h2> Favorite Dogs </h2>
         <section id="small-dog-section">
-            <h3> Small Dogs </h3>
+            <h3 id="sdog"> Small Dogs </h3>
             <img src="smalldog.jpg" alt="Small Dog"/>
             <ul class="dog-types">
                     <li> Maltese </li>
@@ -32,7 +62,7 @@
             </ul>
         </section>
         <section id="large-dog-section">
-            <h3> Big Dogs </h3>
+            <h3 id="ldog"> Large Dogs </h3>
             <img src="largedog.jpg" alt="Big Dog"/>
             <ul class="dog-types">
                     <li> Tibetan Mastiff </li>
@@ -41,6 +71,25 @@
                     <li> Newfoundland </li>
             </ul>
         </section>
+        <script>
+            let preference = 0;   
+            let dogType = prompt("Do you like small dogs or large dogs?");                                     
+            do {                    
+                if (dogType == 'large' || dogType == 'large dogs' || dogType == 'largedogs') {
+                    document.getElementById("ldog").style.color = "gold";
+   
+                    preference = 1;
+                }
+                else if (dogType == 'small' || dogType == 'small dogs' || dogType == 'smalldogs') {  
+                    document.getElementById("sdog").style.color = "gold";                    
+                    preference = 2;                 
+                } else {
+                    dogType = prompt("Wait that's not right. Try answering again using 'small dogs' or 'large dogs': ");
+                }
+                } while (preference == 0);
+
+        </script>
+
     </main>
 
     <footer>
