@@ -3,31 +3,13 @@
 <head>
     <title>Dogs</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
 </head>
 <body>
-
-    <script>
-        
-    </script>
     
     <header>
         <h1>We Love Dogs
-            <script>     
-                let result = 0;   
-                let userDogResponse = prompt("Do you like dogs?");                                     
-                do {                    
-                    if (userDogResponse == 'yes' || userDogResponse == 'y' || userDogResponse == 'YES') {
-                        document.write("...and so do you!");
-                        result = 1;
-                    }
-                    else if (userDogResponse == 'no' || userDogResponse == 'n' || userDogResponse == 'NO') {  
-                        document.write("...but you don't...");                     
-                        result = 1;                 
-                    } else {
-                    userDogResponse = prompt("Wait that's not right. Try again using yes or no!");
-                    }
-                } while (result == 0);
-            </script>
+            <script>getDogInterest();</script>
         </h1>
         
         <nav>
@@ -41,10 +23,7 @@
     <main>
 
         <p id="user-name">
-            <script>
-                let userName = prompt("Please type your name: ");
-                document.write("Hello, " + userName + " and welcome to We Love Dogs!");
-            </script>
+            <script>getName();</script>    
         </p>
 
         <p>Doggo ipsum length boy very hand that feed shibe adorable doggo fat boi smol borking doggo with a long snoot for pats snoot shooberino, heckin angery woofer super chub big ol pupper waggy wags. Bork borking doggo super chub borkdrive, borking doggo ur givin me a spook. Long woofer porgo blop wow such tempt very jealous pupper snoot, thicc doge long bois. Mlem length boy heckin good boys and girls yapper big ol pupper floofs doge, vvv very good spot ruff very good spot you are doing me a frighten. Snoot heckin good boys and girls borkdrive wrinkler very hand that feed shibe corgo dat tungg tho, noodle horse dat tungg tho mlem doggo. Porgo such treat lotsa pats very jealous pupper many pats, noodle horse big ol smol blep, aqua doggo snoot heckin good boys and girls.
@@ -71,24 +50,7 @@
                     <li> Newfoundland </li>
             </ul>
         </section>
-        <script>
-            let preference = 0;   
-            let dogType = prompt("Do you like small dogs or large dogs?");                                     
-            do {                    
-                if (dogType == 'large' || dogType == 'large dogs' || dogType == 'largedogs') {
-                    document.getElementById("ldog").style.color = "gold";
-   
-                    preference = 1;
-                }
-                else if (dogType == 'small' || dogType == 'small dogs' || dogType == 'smalldogs') {  
-                    document.getElementById("sdog").style.color = "gold";                    
-                    preference = 2;                 
-                } else {
-                    dogType = prompt("Wait that's not right. Try answering again using 'small dogs' or 'large dogs': ");
-                }
-                } while (preference == 0);
-
-        </script>
+        <script>getDogPref();</script>
 
     </main>
 
