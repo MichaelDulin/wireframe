@@ -4,6 +4,7 @@ function getName(){
         userName = prompt("That's not right. Try typing your name in again: ");
     }
     document.write("Hello, " + userName + " and welcome to We Love Dogs!");
+    return userName;
 }
 
 
@@ -42,4 +43,14 @@ function getDogPref() {
     } while (preference == 0);
 }
 
-    
+function rating() {
+    let userRating = prompt("What would you rate this site? (1-5): ");
+    let ratingNum = parseInt(userRating, 10);
+    while (ratingNum < 1 || ratingNum > 5) {
+        userRating = prompt("So you decided to use a different number.... Lets try again: Please pick a rating between 1 and 5: ");
+        ratingNum = parseInt(userRating, 10);
+    }
+    for (let i = 0; i < ratingNum; i++) {
+        document.write('<img src="goldstar.jpg"/>');
+    }
+}   
