@@ -1,14 +1,17 @@
 section {
-    border: 2px solid black;
-    background-color:#8FDBA9;
+    border: 2px solid #2f3e46;
+    background-color:#84a98c;
     margin: 20px;
+    border-radius: 25px;
+    color: #2f3e46;
 }
 
 header {
     margin: 20px;
     padding: 10px;
-    border: 2px solid black;
-    background-color:#8FDBA9
+    border-radius: 25px;
+    border: 2px solid #2f3e46;
+    background-color:#84a98c;
 }
 
 #hyperlinks {
@@ -23,12 +26,14 @@ h1 {
     font-size: 40px;
     font-style: oblique;
     font-weight: bold;
+    color: #2f3e46;
 }
 
 h2 {
     font-size: 30px;
     padding-left:45%;
     font-style:italic;
+    color: #2f3e46;
 }
 
 h3 {
@@ -40,6 +45,7 @@ h3 {
 p {
     margin: 20px;
     font-size: 25px;
+    color: #2f3e46;
 }
 
 #user-name {
@@ -50,7 +56,7 @@ p {
 
 img {
     width: 200px;
-    border: 2px solid black;
+    border: 2px solid #2f3e46;
     height: 200px;
     margin: 20px;
     margin-left: 40px;
@@ -67,6 +73,7 @@ img {
     float: right;
     padding-right: 200px;
     font-size: 30px;
+    color: #2f3e46;
 }
 
 
@@ -76,9 +83,13 @@ nav {
 
 body {
     padding: 30px;
-    background-color: rgb(226, 226, 226);
+    background-color: #cad2c5;
 }
 
 footer {
     margin-top: 200px;
+}
+
+#rating {
+    padding-left: 20%;
 }
